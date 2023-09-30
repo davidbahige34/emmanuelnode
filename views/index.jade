@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  p Bienvenue sur E-Lib, la bibliothèque numérique universitaire!
+
+  form(action="/livres", method="post") 
+    label Rechercher un livre : 
+    br
+    input(type="text", name="nomLivre")
+    input(type="submit", value="Rechercher")
+
+  h2 Livres populaires :
+
+  br
+  a(href="/livres/1732") Programmation orientée objet (Java)
+  p Jean R.
+  
